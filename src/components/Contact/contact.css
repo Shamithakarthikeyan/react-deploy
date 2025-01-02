@@ -4,13 +4,13 @@
     justify-content: center;
     align-items: center;
     height: 100vh; /* Full screen height */
-    background-color: #f4f4f9;
+    background-color: #19191e;
     text-align: center;
   }
   
   .welcome-text {
     background-color: #333;
-    color: white;
+    color: rgb(222, 42, 42);
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
