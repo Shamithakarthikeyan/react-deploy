@@ -4,11 +4,6 @@ import Footer from '../Footer';  // Assuming Footer is a sibling component in th
 
 const Home = () => {
   return (
-    <div className="home-container">
-      <div className="welcome-text">
-        <h1>Welcome to Our Website!</h1>
-        <p>NETFLIX WELCOMES YOU.</p>
-      </div>
       <section id="features" className="py-5" style={{ backgroundColor: 'black', overflow: 'hidden' }}>
         <div className="container text-center">
           <h1 className="mb-4" style={{ color: 'white' }}>NETFLIX</h1>
