@@ -1,27 +1,177 @@
 /* Basic styling for the home screen */
+/* General Styles */
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Home Container */
 .home-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Full screen height */
-    background-color: #0e0e10;
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full screen height */
+  background-color: #0e0e10;
+  text-align: center;
+}
+
+/* Welcome Text Section */
+.welcome-text {
+  background-color: #333;
+  color: rgb(239, 79, 79);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-text h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.welcome-text p {
+  font-size: 18px;
+}
+
+/* Carousel Styles */
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.carousel-images {
+  display: flex;
+  transition: transform 1s ease-in-out;
+}
+
+.carousel-images img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+/* Image Scrolling Styles */
+.image-scroll-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.image-scroll {
+  display: flex;
+  animation: moveImages 20s linear infinite;
+}
+
+.image-scroll img {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+@keyframes moveImages {
+  0% {
+    transform: translateX(0);
   }
-  
-  .welcome-text {
-    background-color: #333;
-    color: rgb(239, 79, 79);
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  100% {
+    transform: translateX(-100%);
   }
-  
-  .welcome-text h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
-  
-  .welcome-text p {
-    font-size: 18px;
-  }
-  
+}
+
+/* User Profile Section */
+.profile-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.profile-button {
+  background-color: #e50914;
+  border: none;
+  color: white;
+  padding: 20px 30px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.profile-button:hover {
+  background-color: #b81d18;
+}
+
+/* Form Styles */
+.form-container {
+  text-align: center;
+  padding: 50px;
+}
+
+/* Category Section */
+.category-section {
+  margin-top: 50px;
+}
+
+.category-title {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.category-container {
+  display: flex;
+  overflow-x: scroll;
+  padding-bottom: 10px;
+}
+
+.category-container img {
+  width: 200px;
+  height: 300px;
+  margin-right: 10px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Testimonial Section */
+.testimonial-section {
+  padding: 50px 0;
+  background-color: #141414;
+}
+
+.testimonial-title {
+  font-size: 2em;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.testimonial-card {
+  background-color: #222;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.testimonial-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.testimonial-author {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.testimonial-card p {
+  font-style: italic;
+  font-size: 16px;
+  color: #ccc;
+}
