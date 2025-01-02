@@ -4,6 +4,7 @@ import Footer from '../Footer';  // Assuming Footer is a sibling component in th
 
 const Home = () => {
   return (
+    <div className="home-container">
       <section id="features" className="py-5" style={{ backgroundColor: 'black', overflow: 'hidden' }}>
         <div className="container text-center">
           <h1 className="mb-4" style={{ color: 'white' }}>NETFLIX</h1>
@@ -49,4 +50,4 @@ const Home = () => {
   );
 };
 
-export default Home;  // Exporting Home component
+export default Home;
