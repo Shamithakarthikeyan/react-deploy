@@ -1,27 +1,59 @@
-/* Basic styling for the home screen */
-.home-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Full screen height */
-    background-color: #19191e;
-    text-align: center;
-  }
-  
-  .welcome-text {
-    background-color: #333;
-    color: rgb(222, 42, 42);
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .welcome-text h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
-  
-  .welcome-text p {
-    font-size: 18px;
-  }
-  
+/* Styles for Contact Us Section */
+#contact-us {
+  background-color: black;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  margin-bottom: 5rem;
+}
+
+#contact-us h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#contact-us p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+#contact-us .row {
+  margin-top: 2rem;
+}
+
+#contact-us .col-md-4 {
+  margin-bottom: 2rem;
+}
+
+#contact-us .col-md-4 h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+#contact-us .col-md-4 p {
+  font-size: 1rem;
+}
+
+#contact-us .col-md-4 a {
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 1.1rem;
+}
+
+#contact-us .col-md-4 a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #e82b2b;
+  color: white;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1rem;
+}
